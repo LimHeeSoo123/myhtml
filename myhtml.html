@@ -3,14 +3,28 @@
 	<head>
 			<title> HTML </title>
 	<style>
-		table, th, td {
-			border: 1px solid black;
-			border-collapse: collapse;
-		}
-		td {
-			width: 100px;
-			text-align: center;
-		}
+	
+    .timetable {
+        border-collapse: collapse; 
+        width: 480px;
+        text-align: center;
+        margin: 20px auto;
+    }
+    .timetable th, .timetable td {
+        border: 1px solid black;
+        width: 80px;
+        height: 40px;
+    }
+    .timetable th, .time-header {
+        font-weight: bold;
+        background-color: #f8f9fa;
+    }
+
+    .subject-numerical { background-color: #e3f2fd; } 
+    .subject-project   { background-color: #f1f8e9; } 
+    .subject-web       { background-color: #fff3e0; } 
+    .subject-os        { background-color: #f3e5f5; } 
+    .subject-signal    { background-color: #ffebee; } 
 	</style>
 	</head>
 
@@ -27,146 +41,101 @@
 	</ul>
 	<hr>
 	<h2>시간표</h2>
-	<table>
-		<tr>
-			<th colspan="3"> Table data</th>
-			<th rowspan="3"> Table data</th>
-		</tr>
-		<tr>
-			<td> Table data</td>
-			<td rowspan="2"> Table data</td>
-			<td> Table data</td>
-		</tr>
-		<tr>
-			<td> Table data</td>
-			<td> Table data</td>
-		</tr>
-		
-	</table> <br>
+	
 
-	<table border="1">
+	<table class="timetable">
 		<tr>
-			<td style="width: 80px; height: 40px;"></td>
-			<td style="width: 80px; height: 40px;">월</td>
-			<td style="width: 80px; height: 40px;">화</td>
-			<td style="width: 80px; height: 40px;">수</td>
-			<td style="width: 80px; height: 40px;">목</td>
-			<td style="width: 80px; height: 40px;">금</td>
-		</tr>
+        <th></th> 
+        <th>월</th>
+        <th>화</th>
+        <th>수</th>
+        <th>목</th>
+        <th>금</th>
+    </tr>
 
 		<tr>
-			<td rowspan="2" style="width: 80px; height: 40px;">9</td>
-			<td style="width: 80px; height: 40px;"></td>
-			<td style="width: 80px; height: 40px;"></td>
-			<td style="width: 80px; height: 40px;"></td>
-			<td style="width: 80px; height: 40px;"></td>
-			<td style="width: 80px; height: 40px;"></td>
+			<td rowspan="2" class="time-header">9</td>
+            <td></td><td></td><td></td><td></td><td></td>
 		</tr>
 		<tr>
-			<td style="width: 80px; height: 40px;"></td>
-			<td style="width: 80px; height: 40px;"></td>
-			<td style="width: 80px; height: 40px;"></td>
-			<td style="width: 80px; height: 40px;"></td>
-			<td style="width: 80px; height: 40px;"></td>
-		</tr>
+            <td></td><td></td><td></td><td></td><td></td>
+        </tr>
 		<tr>
-			<td rowspan="2" style="width: 80px; height: 40px;">10</td>
-			<td style="width: 80px; height: 40px;"></td>
-			<td style="width: 80px; height: 40px;"></td>
-			<td style="width: 80px; height: 40px;"></td>
-			<td style="width: 80px; height: 40px;"></td>
-			<td style="width: 80px; height: 40px;"></td>
-		</tr>		
-			<tr>
-			<td rowspan="3" style="width: 80px; height: 40px;"> 수치방법론</td>
-			<td style="width: 80px; height: 40px;"></td>
-			<td rowspan = "3" style="width: 80px; height: 40px;">수치방법론</td>
-			<td style="width: 80px; height: 40px;"></td>
-		</tr>	
+            <td rowspan="2" class="time-header">10</td>
+         <td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+        <td rowspan="3" class="subject-numerical">수치방법론</td>
+        <td></td>
+        <td rowspan="3" class="subject-numerical">수치방법론</td>
+        <td></td>
+        <td></td>
+        </tr>	
 		<tr>
-			<td rowspan="2" style="width: 80px; height: 40px;">11</td>
-			<td rowspan="4" style="width: 80px; height: 40px;">전공기초프로젝트(종합설계)</td>
-			<td style="width: 80px; height: 40px;"></td>
-			<td rowspan="4" style="width: 80px; height: 40px;">전공기초프로젝트(종합설계)</td>
-		</tr>	
+            <td rowspan="2" class="time-header">11</td>
+            <td rowspan="4" class="subject-project">전공기초프로젝트<br>(종합설계)</td>
+            <td></td>
+            <td rowspan="4" class="subject-project">전공기초프로젝트<br>(종합설계)</td>
+        </tr>
 		<tr>
-			<td style="width: 80px; height: 40px;"></td>
-		
-		</tr>
+            <td></td>
+        </tr>
 		<tr>
-			<td rowspan="2" style="width: 80px; height: 40px;">12</td>
-			<td style="width: 80px; height: 40px;"></td>
-			<td style="width: 80px; height: 40px;"></td>
-			<td style="width: 80px; height: 40px;"></td>
-		
-		</tr>
+            <td rowspan="2" class="time-header">12</td>
+            <td></td><td></td><td></td>
+        </tr>
 		<tr>
-			<td style="width: 80px; height: 40px;"></td>
-			<td style="width: 80px; height: 40px;"></td>
-			<td style="width: 80px; height: 40px;"></td>
-		
-		</tr>
+            <td></td><td></td><td></td>
+        </tr>
 		<tr>
-			<td rowspan="2" style="width: 80px; height: 40px;">1</td>
-			<td rowspan="4" style="width: 80px; height: 40px;">웹프로그래밍</td>
-			<td style="width: 80px; height: 40px;"></td>
-			<td rowspan="4" style="width: 80px; height: 40px;">웹프로그래밍</td>
-			<td style="width: 80px; height: 40px;"></td>
-		</tr>
-		<tr>
-			<td  rowspan="3" style="width: 80px; height: 40px;">운영체제</td>
-			<td  rowspan="3" style="width: 80px; height: 40px;">운영체제</td>
-			<td style="width: 80px; height: 40px;"></td>
-		</tr>
-		<tr>
-			<td rowspan="2" style="width: 80px; height: 40px;">2</td>
-			<td style="width: 80px; height: 40px;"></td>
-			
-		</tr>
-		<tr>
-			<td style="width: 80px; height: 40px;"></td>
-			
-		</tr>
-		<tr>
-			<td rowspan="2" style="width: 80px; height: 40px;">3</td>
-			<td style="width: 80px; height: 40px;"></td>
-			<td style="width: 80px; height: 40px;"></td>
-			<td style="width: 80px; height: 40px;"></td>
-			<td style="width: 80px; height: 40px;"></td>
-		</tr>
-		<tr>
-			<td style="width: 80px; height: 40px;"></td>
-			<td style="width: 80px; height: 40px;"></td>
-			<td style="width: 80px; height: 40px;"></td>
-			<td style="width: 80px; height: 40px;"></td>
-			<td style="width: 80px; height: 40px;"></td>
-		</tr>
-		<tr>
-			<td rowspan="2" style="width: 80px; height: 40px;">4</td>
-			<td style="width: 80px; height: 40px;"></td>
-			<td style="width: 80px; height: 40px;"></td>
-			<td style="width: 80px; height: 40px;"></td>
-			<td style="width: 80px; height: 40px;"></td>
-			<td style="width: 80px; height: 40px;"></td>
-		</tr>
-		<tr>
-			<td style="width: 80px; height: 40px;"></td>
-			<td rowspan = "3" style="width: 80px; height: 40px;">signal processing</td>
-			<td style="width: 80px; height: 40px;"></td>
-			<td rowspan = "3" style="width: 80px; height: 40px;">signal processing</td>
-			<td style="width: 80px; height: 40px;"></td>
-		</tr>
-		<tr>
-			<td rowspan="2" style="width: 80px; height: 40px;">5</td>
-			<td style="width: 80px; height: 40px;"></td>
-			<td style="width: 80px; height: 40px;"></td>
-			<td style="width: 80px; height: 40px;"></td>
-		</tr>
-		<tr>
-			<td style="width: 80px; height: 40px;"></td>
-			<td style="width: 80px; height: 40px;"></td>
-			<td style="width: 80px; height: 40px;"></td>
-		</tr>													
-	</table>
+        <td rowspan="2" class="time-header">1</td>
+        <td rowspan="4" class="subject-web">웹프로그래밍</td>
+        <td></td>
+        <td rowspan="4" class="subject-web">웹프로그래밍</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td rowspan="3" class="subject-os">운영체제</td>
+        <td rowspan="3" class="subject-os">운영체제</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td rowspan="2" class="time-header">2</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td rowspan="2" class="time-header">3</td>
+        <td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td></td><td></td><td></td><td></td><td></td>
+    </tr>
+
+    <tr>
+        <td rowspan="2" class="time-header">4</td>
+        <td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td rowspan="3" class="subject-signal">signal processing</td>
+        <td></td>
+        <td rowspan="3" class="subject-signal">signal processing</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td rowspan="2" class="time-header">5</td>
+        <td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td></td><td></td><td></td>
+    </tr>
+</table>
 </body>
 </html>
