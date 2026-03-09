@@ -3,29 +3,19 @@
 	<head>
 			<title> HTML </title>
 	<style>
-	
-    .timetable {
-        border-collapse: collapse; 
-        width: 480px;
-        text-align: center;
-        margin: 20px auto;
-    }
-    .timetable th, .timetable td {
-        border: 1px solid black;
-        width: 80px;
-        height: 40px;
-    }
-    .timetable th, .time-header {
-        font-weight: bold;
-        background-color: #f8f9fa;
-    }
+    	table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		td {
+			width: 100px;
+            height: 30px;
+			text-align: center;
+		}
+</style>
 
-    .subject-numerical { background-color: #e3f2fd; } 
-    .subject-project   { background-color: #f1f8e9; } 
-    .subject-web       { background-color: #fff3e0; } 
-    .subject-os        { background-color: #f3e5f5; } 
-    .subject-signal    { background-color: #ffebee; } 
-	</style>
+
+</style>
 	</head>
 
 
@@ -43,8 +33,8 @@
 	<h2>시간표</h2>
 	
 
-	<table class="timetable">
-		<tr>
+	<table>
+	<tr>
         <th></th> 
         <th>월</th>
         <th>화</th>
@@ -54,63 +44,63 @@
     </tr>
 
 		<tr>
-			<td rowspan="2" class="time-header">9</td>
+			<th rowspan="2">9</th>
             <td></td><td></td><td></td><td></td><td></td>
 		</tr>
 		<tr>
             <td></td><td></td><td></td><td></td><td></td>
         </tr>
 		<tr>
-            <td rowspan="2" class="time-header">10</td>
+            <th rowspan="2">10</th>
          <td></td><td></td><td></td><td></td><td></td>
         </tr>
         <tr>
-        <td rowspan="3" class="subject-numerical">수치방법론</td>
+        <td rowspan="3" style="background-color: #e3f2fd;">수치방법론</td>
         <td></td>
-        <td rowspan="3" class="subject-numerical">수치방법론</td>
+        <td rowspan="3" style="background-color: #e3f2fd;">수치방법론</td>
         <td></td>
         <td></td>
         </tr>	
 		<tr>
-            <td rowspan="2" class="time-header">11</td>
-            <td rowspan="4" class="subject-project">전공기초프로젝트<br>(종합설계)</td>
+            <th rowspan="2">11</th>
+            <td rowspan="4" style="background-color: #f1f8e9;">전공기초프로젝트<br>(종합설계)</td>
             <td></td>
-            <td rowspan="4" class="subject-project">전공기초프로젝트<br>(종합설계)</td>
+            <td rowspan="4" style="background-color: #f1f8e9;">전공기초프로젝트<br>(종합설계)</td>
         </tr>
 		<tr>
             <td></td>
         </tr>
 		<tr>
-            <td rowspan="2" class="time-header">12</td>
+            <th rowspan="2">12</th>
             <td></td><td></td><td></td>
         </tr>
 		<tr>
             <td></td><td></td><td></td>
         </tr>
 		<tr>
-        <td rowspan="2" class="time-header">1</td>
-        <td rowspan="4" class="subject-web">웹프로그래밍</td>
+        <th rowspan="2">1</th>
+        <td rowspan="4" style="background-color: #fff3e0;">웹프로그래밍</td>
         <td></td>
-        <td rowspan="4" class="subject-web">웹프로그래밍</td>
+        <td rowspan="4" style="background-color: #fff3e0;">웹프로그래밍</td>
         <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td rowspan="3" class="subject-os">운영체제</td>
-        <td rowspan="3" class="subject-os">운영체제</td>
-        <td></td>
-    </tr>
-
-    <tr>
-        <td rowspan="2" class="time-header">2</td>
         <td></td>
     </tr>
     <tr>
+        <td rowspan="3" style="background-color: #f3e5f5;">운영체제</td>
+        <td rowspan="3" style="background-color: #f3e5f5;">운영체제</td>
         <td></td>
     </tr>
 
     <tr>
-        <td rowspan="2" class="time-header">3</td>
+        <th rowspan="2">2</th>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+
+    <tr>
+        <th rowspan="2">3</th>
         <td></td><td></td><td></td><td></td><td></td>
     </tr>
     <tr>
@@ -118,24 +108,24 @@
     </tr>
 
     <tr>
-        <td rowspan="2" class="time-header">4</td>
+        <th rowspan="2">4</th>
         <td></td><td></td><td></td><td></td><td></td>
     </tr>
     <tr>
         <td></td>
-        <td rowspan="3" class="subject-signal">signal processing</td>
+        <td rowspan="3"  style="background-color:#ffebee;">signal processing</td>
         <td></td>
-        <td rowspan="3" class="subject-signal">signal processing</td>
+        <td rowspan="3"  style="background-color:#ffebee;">signal processing</td>
         <td></td>
     </tr>
 
     <tr>
-        <td rowspan="2" class="time-header">5</td>
+        <th rowspan="2">5</th>
         <td></td><td></td><td></td>
     </tr>
     <tr>
         <td></td><td></td><td></td>
     </tr>
-</table>
+    </table>
 </body>
 </html>
